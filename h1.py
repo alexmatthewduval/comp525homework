@@ -52,3 +52,20 @@ def ten_random_numbers(start, stop):
 
             random_int = random.randint(start,stop)
             print(random_int)
+def average_random_1_to_10(n):
+    """
+    Calculates the average of random numbers
+    between 1 and 10  generated n times
+    n: positive integer - how many times random numbers
+         are generated
+    Returns: integer
+    """
+    
+    sum_randint = 0
+    
+    if (n > 0) and type(n) == int:        
+        for i in range(n):
+            random_int = random.randint(1,10)
+            sum_randint += random_int
+        sum_randint /= n  
+    return sum_randint
