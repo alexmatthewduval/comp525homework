@@ -15,11 +15,22 @@ def is_even(number):
     Checks if number is even
     number: integer
     Returns: True if number is even, False otherwise
-    
-
     """
     remander = number%2
     if remander == 0:
         return True
     else:
-        return False    
+        return False  
+
+ def sum_of_odd_to(n):
+    """
+    Calculates the sum of all odd numbers 
+    from 1 to given n
+    n: positive integer
+    Returns: integer
+    """
+    odd_sum = 0
+    for odd in range(1,n+1,2):
+        
+        odd_sum += odd
+    return odd_sum             
