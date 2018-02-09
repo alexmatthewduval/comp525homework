@@ -10,3 +10,16 @@ def circle_area(radius):
     """
     area = math.pi*(radius**2)
     return area
+def is_even(number):
+    """
+    Checks if number is even
+    number: integer
+    Returns: True if number is even, False otherwise
+    
+
+    """
+    remander = number%2
+    if remander == 0:
+        return True
+    else:
+        return False    
