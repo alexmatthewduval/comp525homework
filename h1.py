@@ -33,4 +33,13 @@ def is_even(number):
     for odd in range(1,n+1,2):
         
         odd_sum += odd
-    return odd_sum             
+    return odd_sum
+ def miles_per_gallon(miles, gallons):
+    """
+    Calculates miles per gallons
+    miles: positive float
+    gallons: positive float
+    """
+    if (gallons > 0):
+        mpg = miles/gallons
+        return mpg                
