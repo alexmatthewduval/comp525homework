@@ -42,4 +42,13 @@ def is_even(number):
     """
     if (gallons > 0):
         mpg = miles/gallons
-        return mpg                
+        return mpg
+def ten_random_numbers(start, stop):
+    """
+    Prints ten random integers between start and stop
+    """
+    if start <= stop:
+        for i in range(10):
+
+            random_int = random.randint(start,stop)
+            print(random_int)
